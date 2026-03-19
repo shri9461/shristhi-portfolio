@@ -81,7 +81,7 @@ const Certificates = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
+              className="glass rounded-3xl border border-border-subtle hover:border-primary/50 transition-all duration-300 group overflow-hidden"
             >
               <div className="h-48 overflow-hidden relative">
                 <img
@@ -90,12 +90,12 @@ const Certificates = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <Award size={40} className="text-white/80" />
+                <Award size={40} className="text-foreground/80" />
                 </div>
               </div>
 
               <div className="p-8">
-                <div className="mb-4 inline-flex p-2 bg-white/5 rounded-xl border border-white/10">
+                <div className="mb-4 inline-flex p-2 bg-foreground/5 rounded-xl border border-border-subtle">
                   {cert.icon}
                 </div>
 
@@ -103,10 +103,10 @@ const Certificates = () => {
                   {cert.title}
                 </h3>
 
-                <p className="text-white/60 font-medium mb-6">{cert.issuer}</p>
+                <p className="text-foreground/60 font-medium mb-6">{cert.issuer}</p>
 
-                <div className="flex items-center justify-between mt-auto pt-4 border-t border-white/5">
-                  <div className="flex items-center gap-2 text-sm text-white/40">
+                <div className="flex items-center justify-between mt-auto pt-4 border-t border-foreground/5">
+                  <div className="flex items-center gap-2 text-sm text-foreground/40">
                     <Calendar size={14} />
                     <span>{cert.date}</span>
                   </div>

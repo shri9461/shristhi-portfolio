@@ -38,7 +38,7 @@ const Training = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass p-8 md:p-10 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 relative group overflow-hidden"
+              className="glass p-8 md:p-10 rounded-3xl border border-border-subtle hover:border-primary/50 transition-all duration-300 relative group overflow-hidden"
             >
               {/* Subtle accent gradient */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
@@ -59,18 +59,18 @@ const Training = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-2 text-white/60 mb-6 text-sm font-medium">
+                  <div className="flex items-center gap-2 text-foreground/60 mb-6 text-sm font-medium">
                     <Building2 size={16} />
                     {item.issuer}
                   </div>
 
-                  <p className="text-white/70 mb-8 leading-relaxed">
+                  <p className="text-foreground/70 mb-8 leading-relaxed">
                     {item.description}
                   </p>
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     {item.highlights.map((highlight, i) => (
-                      <div key={i} className="flex items-center gap-3 text-sm text-white/50 bg-white/5 p-3 rounded-xl border border-white/5">
+                      <div key={i} className="flex items-center gap-3 text-sm text-foreground/50 bg-foreground/5 p-3 rounded-xl border border-foreground/5">
                         <BookOpen size={16} className="text-secondary" />
                         {highlight}
                       </div>

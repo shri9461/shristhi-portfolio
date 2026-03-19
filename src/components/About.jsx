@@ -54,7 +54,7 @@ const About = () => {
             className="relative"
           >
             <div className="aspect-video glass rounded-3xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-br from-foreground/10 to-transparent" />
               <div className="flex items-center justify-center h-full">
                 <Code size={80} className="text-primary opacity-20" />
               </div>

@@ -58,7 +58,7 @@ const Resume = () => {
               target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 border border-white/10 rounded-full font-bold hover:bg-white/5 transition-all"
+              className="inline-flex items-center gap-2 px-8 py-4 border border-border-subtle rounded-full font-bold hover:bg-foreground/5 transition-all"
             >
               <ExternalLink size={20} />
               LinkedIn Profile
@@ -74,11 +74,11 @@ const Resume = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
                 onClick={() => setIsModalOpen(true)}
-                className="glass p-3 md:p-6 rounded-[2rem] border border-white/10 relative overflow-hidden group shadow-2xl cursor-pointer max-w-sm w-full"
+                className="glass p-3 md:p-6 rounded-[2rem] border border-border-subtle relative overflow-hidden group shadow-2xl cursor-pointer max-w-sm w-full"
             >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
-                <div className="relative z-10 rounded-2xl overflow-hidden border border-white/5 aspect-[3/4]">
+                <div className="relative z-10 rounded-2xl overflow-hidden border border-foreground/5 aspect-[3/4]">
                     <img 
                         src={resumeImg} 
                         alt="Shristhi Sethi Resume Preview" 
@@ -112,11 +112,11 @@ const Resume = () => {
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.9, y: 20 }}
                         transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-                        className="relative max-w-5xl w-full h-[90vh] glass rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-white/10"
+                        className="relative max-w-5xl w-full h-[90vh] glass rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-border-subtle"
                         onClick={(e) => e.stopPropagation()}
                     >
                         {/* Modal Header */}
-                        <div className="flex items-center justify-between p-6 border-b border-white/10 glass">
+                        <div className="flex items-center justify-between p-6 border-b border-border-subtle glass">
                             <h3 className="text-xl font-bold flex items-center gap-2">
                                 <FileText size={48} className="text-secondary mb-4 mx-auto" />
                                 Resume Dashboard
@@ -139,7 +139,7 @@ const Resume = () => {
                         </div>
 
                         {/* Modal Footer */}
-                        <div className="p-6 border-t border-white/10 flex justify-center gap-4 glass">
+                        <div className="p-6 border-t border-border-subtle flex justify-center gap-4 glass">
                             <button
                                 onClick={downloadResume}
                                 disabled={isDownloading}

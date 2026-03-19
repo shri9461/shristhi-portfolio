@@ -50,11 +50,11 @@ const Education = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass p-8 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group"
+              className="glass p-8 rounded-3xl border border-border-subtle hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="flex gap-6">
-                  <div className="flex-shrink-0 w-14 h-14 bg-white/5 rounded-2xl border border-white/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <div className="flex-shrink-0 w-14 h-14 bg-foreground/5 rounded-2xl border border-border-subtle flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     {edu.icon}
                   </div>
                   <div>
@@ -62,7 +62,7 @@ const Education = () => {
                       {edu.institution}
                     </h3>
                     <p className="text-primary font-medium mb-2">{edu.degree}</p>
-                    <div className="flex flex-wrap gap-4 text-sm text-white/40">
+                    <div className="flex flex-wrap gap-4 text-sm text-foreground/40">
                       <div className="flex items-center gap-1">
                         <MapPin size={14} />
                         <span>{edu.location}</span>

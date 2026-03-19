@@ -61,7 +61,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass rounded-3xl overflow-hidden group border border-white/10 hover:border-primary/50 transition-colors"
+              className="glass rounded-3xl overflow-hidden group border border-border-subtle hover:border-primary/50 transition-colors"
             >
               <div className="h-48 overflow-hidden relative">
                 <img
@@ -70,11 +70,11 @@ const Projects = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a href={project.github} className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors backdrop-blur-md">
-                    <Github size={20} />
+                  <a href={project.github} className="p-3 bg-foreground/10 rounded-full hover:bg-foreground/20 transition-colors backdrop-blur-md">
+                    <Github size={20} className="text-foreground" />
                   </a>
-                  <a href={project.demo} className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors backdrop-blur-md">
-                    <ExternalLink size={20} />
+                  <a href={project.demo} className="p-3 bg-foreground/10 rounded-full hover:bg-foreground/20 transition-colors backdrop-blur-md">
+                    <ExternalLink size={20} className="text-foreground" />
                   </a>
                 </div>
               </div>

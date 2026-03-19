@@ -57,12 +57,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 {link.name}
               </motion.a>
             ))}
-            <div className="flex items-center space-x-4 border-l border-white/10 pl-6 ml-4">
+            <div className="flex items-center space-x-4 border-l border-foreground/10 pl-6 ml-4">>
               <a 
                 href="https://github.com/shri9461" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-2 rounded-full hover:bg-white/10 transition-colors"
+                className="p-2 rounded-md hover:bg-foreground/10 transition-colors"
               >
                 <Github size={18} />
               </a>
@@ -70,7 +70,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 href="https://www.linkedin.com/in/shristhi-sethi-043772289/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-2 rounded-full hover:bg-white/10 transition-colors"
+                className="p-2 rounded-md hover:bg-foreground/10 transition-colors"
               >
                 <Linkedin size={18} />
               </a>
@@ -78,13 +78,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 href="https://leetcode.com/u/shri490/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-2 rounded-full hover:bg-white/10 transition-colors"
+                className="p-2 rounded-md hover:bg-foreground/10 transition-colors"
               >
                 <Code2 size={18} />
               </a>
               <button
                 onClick={toggleDarkMode}
-                className="p-2 rounded-full hover:bg-white/10 transition-colors"
+                className="p-2 rounded-md hover:bg-foreground/10 transition-colors"
               >
                 {darkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
@@ -124,7 +124,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors"
+                  className="block px-3 py-2 rounded-md text-base font-medium hover:bg-foreground/10 transition-colors"
                 >
                   {link.name}
                 </a>

@@ -74,7 +74,7 @@ const Contact = () => {
                 { icon: MapPin, label: 'Location', value: 'India' },
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 md:bg-transparent rounded-xl flex items-center justify-center">
+                  <div className="p-3 bg-foreground/10 md:bg-transparent rounded-xl flex items-center justify-center">
                     <Mail className="text-primary" size={24} />
                   </div>
                   <div>
@@ -127,7 +127,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors"
+                    className="w-full bg-foreground/5 border border-border-subtle rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors"
+                    className="w-full bg-foreground/5 border border-border-subtle rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors"
                     placeholder="Enter your email"
                   />
                 </div>

@@ -31,15 +31,15 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass p-8 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300"
+              className="glass p-8 rounded-3xl border border-border-subtle hover:border-primary/50 transition-all duration-300"
             >
-              <div className="mb-6 inline-flex p-3 bg-white/5 rounded-2xl border border-white/10">
+              <div className="mb-6 inline-flex p-3 bg-foreground/5 rounded-2xl border border-border-subtle">
                 {skill.icon}
               </div>
               <h3 className="text-xl font-bold mb-4">{skill.name}</h3>
               <div className="flex flex-wrap gap-2">
                 {skill.items.map((item, i) => (
-                  <span key={i} className="px-3 py-1 bg-white/5 border border-white/5 rounded-full text-sm opacity-70">
+                  <span key={i} className="px-3 py-1 bg-foreground/5 border border-foreground/5 rounded-full text-sm opacity-70">
                     {item}
                   </span>
                 ))}
@@ -49,7 +49,7 @@ const Skills = () => {
                   <span className="opacity-60">Mastery</span>
                   <span className="text-primary">{skill.level}</span>
                 </div>
-                <div className="h-2 bg-white/5 rounded-full overflow-hidden">
+                <div className="h-2 bg-foreground/5 rounded-full overflow-hidden">
                   <motion.div
                     initial={{ width: 0 }}
                     whileInView={{ width: skill.level }}
