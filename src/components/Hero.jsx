@@ -6,8 +6,8 @@ const Hero = () => {
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-light/10 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-[10%] right-[-5%] w-[35%] h-[35%] bg-secondary-light/10 rounded-full blur-[100px] animate-pulse delay-700" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-white/5 rounded-full blur-[120px] animate-pulse" />
+        <div className="absolute bottom-[10%] right-[-5%] w-[35%] h-[35%] bg-white/5 rounded-full blur-[100px] animate-pulse delay-700" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
@@ -19,7 +19,7 @@ const Hero = () => {
           >
             <h2 className="text-primary-light font-semibold tracking-wider uppercase mb-2">Welcome to my space</h2>
             <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-              I'm <span className="bg-gradient-to-r from-primary-light to-secondary-light bg-clip-text text-transparent">Shristhi Sethi</span>
+              I'm <span className="text-white">Shristhi Sethi</span>
             </h1>
             <p className="text-xl opacity-80 mb-8 max-w-lg">
               Full Stack Web Developer & Computer Science Enthusiast. I build high-performance, beautiful, and accessible web experiences.
@@ -29,7 +29,7 @@ const Hero = () => {
                 href="#projects"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-primary-light text-white rounded-full font-semibold flex items-center gap-2 shadow-lg shadow-primary-light/25"
+                className="px-8 py-4 bg-white text-black rounded-full font-semibold flex items-center gap-2 shadow-lg shadow-white/10"
               >
                 View My Work <ArrowRight size={20} />
               </motion.a>
@@ -83,13 +83,13 @@ const Hero = () => {
             className="relative"
           >
             <div className="relative z-10 w-64 h-64 md:w-96 md:h-96 mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-light/20 to-secondary-light/20 rounded-full blur-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-full blur-2xl" />
                 <img 
                     src="/shristhi_profile.jpg" 
                     alt="Shristhi Sethi" 
                     className="w-full h-full object-cover rounded-full border-4 border-white/10 relative z-20 shadow-2xl"
                     onError={(e) => {
-                        e.target.src = 'https://ui-avatars.com/api/?name=Shristhi+Sethi&size=512&background=6366f1&color=fff';
+                        e.target.src = 'https://ui-avatars.com/api/?name=Shristhi+Sethi&size=512&background=000000&color=fff';
                     }}
                 />
             </div>

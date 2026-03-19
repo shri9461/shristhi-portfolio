@@ -8,20 +8,20 @@ export default {
     extend: {
       colors: {
         primary: {
-          light: '#3b82f6',
-          dark: '#2563eb',
+          light: '#ffffff',
+          dark: '#e5e7eb',
         },
         secondary: {
-          light: '#06b6d4',
-          dark: '#0891b2',
+          light: '#a1a1aa',
+          dark: '#52525b',
         },
         background: {
           light: '#ffffff',
-          dark: '#0f172a',
+          dark: '#000000',
         },
         text: {
-          light: '#1e293b',
-          dark: '#f1f5f9',
+          light: '#000000',
+          dark: '#ffffff',
         }
       },
       animation: {

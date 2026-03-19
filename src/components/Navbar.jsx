@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             animate={{ opacity: 1, x: 0 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="text-2xl font-bold bg-gradient-to-r from-primary-light to-secondary-light bg-clip-text text-transparent">
+            <a href="#home" className="text-2xl font-bold text-white">
               Shristhi.
             </a>
           </motion.div>
