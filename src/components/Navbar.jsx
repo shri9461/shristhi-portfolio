@@ -57,7 +57,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 {link.name}
               </motion.a>
             ))}
-            <div className="flex items-center space-x-4 border-l border-foreground/10 pl-6 ml-4">>
+            <div className="flex items-center space-x-4 border-l border-foreground/10 pl-6 ml-4">
               <a 
                 href="https://github.com/shri9461" 
                 target="_blank" 
