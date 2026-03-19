@@ -53,7 +53,7 @@ const Hero = () => {
                 href="https://github.com/shri9461" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 rounded-full glass border border-white/10 hover:border-primary/50 hover:text-primary transition-all"
+                className="p-3 rounded-full glass border border-border-subtle hover:border-primary/50 hover:text-primary transition-all"
               >
                 <Github size={24} />
               </a>
@@ -61,7 +61,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/shristhi-sethi-043772289/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 rounded-full glass border border-white/10 hover:border-primary/50 hover:text-primary transition-all"
+                className="p-3 rounded-full glass border border-border-subtle hover:border-primary/50 hover:text-primary transition-all"
               >
                 <Linkedin size={24} />
               </a>
@@ -69,7 +69,7 @@ const Hero = () => {
                 href="https://leetcode.com/u/shri490/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="p-3 rounded-full glass border border-white/10 hover:border-primary/50 hover:text-primary transition-all"
+                className="p-3 rounded-full glass border border-border-subtle hover:border-primary/50 hover:text-primary transition-all"
               >
                 <Code2 size={24} />
               </a>
@@ -83,11 +83,11 @@ const Hero = () => {
             className="relative"
           >
             <div className="relative z-10 w-64 h-64 md:w-96 md:h-96 mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-full blur-2xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-foreground/10 to-transparent rounded-full blur-2xl" />
                 <img 
                     src="/shristhi_profile.jpg" 
                     alt="Shristhi Sethi" 
-                    className="w-full h-full object-cover rounded-full border-4 border-white/10 relative z-20 shadow-2xl"
+                    className="w-full h-full object-cover rounded-full border-4 border-border-subtle relative z-20 shadow-2xl"
                     onError={(e) => {
                         e.target.src = 'https://ui-avatars.com/api/?name=Shristhi+Sethi&size=512&background=000000&color=fff';
                     }}
