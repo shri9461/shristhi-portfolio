@@ -31,7 +31,7 @@ const Resume = () => {
   }
 
   return (
-    <section id="resume" className="py-24 bg-white/5">
+    <section id="resume" className="py-24 bg-foreground/5">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -123,7 +123,7 @@ const Resume = () => {
                             </h3>
                             <button 
                                 onClick={() => setIsModalOpen(false)}
-                                className="p-3 bg-white/5 rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white"
+                                className="p-3 bg-foreground/5 rounded-full hover:bg-foreground/10 transition-colors text-foreground/60 hover:text-foreground"
                             >
                                 <X size={24} />
                             </button>

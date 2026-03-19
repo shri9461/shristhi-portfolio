@@ -29,7 +29,7 @@ const Education = () => {
   ]
 
   return (
-    <section id="certificates" className="py-24 bg-foreground/5">
+    <section id="education" className="py-24 bg-foreground/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ const Education = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="w-full bg-foreground/5 border border-border-subtle rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors duration-300 group"
+              className="glass p-8 rounded-3xl border border-border-subtle hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="flex gap-6">
