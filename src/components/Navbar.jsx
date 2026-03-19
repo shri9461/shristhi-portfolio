@@ -101,7 +101,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md hover:bg-white/10 transition-colors"
+              className="p-2 rounded-md hover:bg-foreground/10 transition-colors"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
