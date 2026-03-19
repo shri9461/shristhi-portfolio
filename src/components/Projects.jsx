@@ -50,7 +50,7 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-primary-light mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -61,7 +61,7 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass rounded-3xl overflow-hidden group border border-white/10 hover:border-primary-light/50 transition-colors"
+              className="glass rounded-3xl overflow-hidden group border border-white/10 hover:border-primary/50 transition-colors"
             >
               <div className="h-48 overflow-hidden relative">
                 <img
@@ -85,7 +85,7 @@ const Projects = () => {
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((t, i) => (
-                    <span key={i} className="text-xs text-primary-light font-medium uppercase tracking-wider">
+                    <span key={i} className="text-xs text-primary font-medium uppercase tracking-wider">
                       {t}
                     </span>
                   ))}

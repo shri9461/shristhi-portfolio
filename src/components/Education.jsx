@@ -8,7 +8,7 @@ const Education = () => {
       location: 'Jalandhar, Punjab',
       degree: 'Bachelor of Technology - Computer Science and Engineering',
       duration: 'Since Aug’23',
-      icon: <GraduationCap size={24} className="text-primary-light" />,
+      icon: <GraduationCap size={24} className="text-primary" />,
     },
     {
       institution: 'St. Francis School',
@@ -16,7 +16,7 @@ const Education = () => {
       degree: 'Intermediate',
       duration: 'Apr ‘21 – Mar’22',
       details: 'Percentage: 80%',
-      icon: <School size={24} className="text-secondary-light" />,
+      icon: <School size={24} className="text-secondary" />,
     },
     {
       institution: 'Railway School',
@@ -39,7 +39,7 @@ const Education = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Education</h2>
-          <div className="w-20 h-1 bg-primary-light mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid gap-8 max-w-4xl mx-auto">
@@ -50,7 +50,7 @@ const Education = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass p-8 rounded-3xl border border-white/10 hover:border-primary-light/50 transition-all duration-300 group"
+              className="glass p-8 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div className="flex gap-6">
@@ -58,10 +58,10 @@ const Education = () => {
                     {edu.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-1 group-hover:text-primary-light transition-colors">
+                    <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">
                       {edu.institution}
                     </h3>
-                    <p className="text-primary-light font-medium mb-2">{edu.degree}</p>
+                    <p className="text-primary font-medium mb-2">{edu.degree}</p>
                     <div className="flex flex-wrap gap-4 text-sm text-white/40">
                       <div className="flex items-center gap-1">
                         <MapPin size={14} />
@@ -76,7 +76,7 @@ const Education = () => {
                 </div>
                 {edu.details && (
                   <div className="md:text-right">
-                    <span className="inline-block px-4 py-2 bg-primary-light/10 rounded-full text-primary-light text-sm font-bold border border-primary-light/20">
+                    <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary text-sm font-bold border border-primary/20">
                       {edu.details}
                     </span>
                   </div>

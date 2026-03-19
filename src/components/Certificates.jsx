@@ -15,7 +15,7 @@ const Certificates = () => {
       date: 'July 2025',
       link: 'https://media.licdn.com/dms/image/v2/D5622AQGV-m4TNq9aaw/feedshare-shrink_800/B56ZrLuFLHJ8Ag-/0/1764354448100?e=1775088000&v=beta&t=5smzj9-xyz35NrpcRyEA7BNay-6EDvIj15RIqcQj9sU',
       image: cppDsCert,
-      icon: <Award className="text-secondary-light" size={24} />
+      icon: <Award className="text-secondary" size={24} />
     },
     {
       title: 'Cloud Computing',
@@ -23,7 +23,7 @@ const Certificates = () => {
       date: 'Oct 2025',
       link: 'https://media.licdn.com/dms/image/v2/D5622AQFPHPEu-3X96Q/feedshare-shrink_800/B56Zq2zgdtIsAg-/0/1764003548034?e=1775088000&v=beta&t=PBi6u9EjLHJ6wIvXNypBjIXVKFgZS7QALD-SD3M-uNI',
       image: cloudComputingCert,
-      icon: <Award className="text-secondary-light" size={24} />
+      icon: <Award className="text-secondary" size={24} />
     },
     {
       title: 'Web Hackathon - Binary Blitz',
@@ -31,7 +31,7 @@ const Certificates = () => {
       date: 'March 2025',
       link: 'https://media.licdn.com/dms/image/v2/D5622AQG6Qna-2oQM_g/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1717593061513?e=1775088000&v=beta&t=5IsoaL_LfXEUWxj6pjFAIMZYzvGfkbQtnCk2A__DAJE',
       image: binaryBlitzCert,
-      icon: <Award className="text-secondary-light" size={24} />
+      icon: <Award className="text-secondary" size={24} />
     },
     {
       title: 'Mastering in C: Basic to Beyond',
@@ -39,7 +39,7 @@ const Certificates = () => {
       date: 'March 2024',
       link: 'https://media.licdn.com/dms/image/v2/D5622AQHVmeRgMmjp4A/feedshare-shrink_800/feedshare-shrink_800/0/1711677940760?e=1775088000&v=beta&t=P493WDdsyxzvTwlfr5tw14ntsAOe6rKs6rotlCQ5UQ8',
       image: csePathshalaCert,
-      icon: <Award className="text-secondary-light" size={24} />
+      icon: <Award className="text-secondary" size={24} />
     },
     {
       title: 'Introduction to Big Data Tools for Beginners',
@@ -47,7 +47,7 @@ const Certificates = () => {
       date: 'Feb 2024',
       link: 'https://www.simplilearn.com/big-data-tools-free-course-online-skillup',
       image: simplilearnCert,
-      icon: <Award className="text-secondary-light" size={24} />
+      icon: <Award className="text-secondary" size={24} />
     },
     {
       title: 'Responsive Web Design',
@@ -55,7 +55,7 @@ const Certificates = () => {
       date: 'Oct 2023',
       link: 'https://www.freecodecamp.org/certification/123456-shristhi-sethi/responsive-web-design',
       image: freecodecampCert,
-      icon: <Award className="text-secondary-light" size={24} />
+      icon: <Award className="text-secondary" size={24} />
     }
   ]
 
@@ -70,7 +70,7 @@ const Certificates = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Certifications</h2>
-          <div className="w-20 h-1 bg-primary-light mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -81,7 +81,7 @@ const Certificates = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass rounded-3xl border border-white/10 hover:border-primary-light/50 transition-all duration-300 group overflow-hidden"
+              className="glass rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group overflow-hidden"
             >
               <div className="h-48 overflow-hidden relative">
                 <img
@@ -99,7 +99,7 @@ const Certificates = () => {
                   {cert.icon}
                 </div>
 
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary-light transition-colors">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                   {cert.title}
                 </h3>
 
@@ -112,7 +112,7 @@ const Certificates = () => {
                   </div>
                   <a
                     href={cert.link}
-                    className="flex items-center gap-1 text-sm font-semibold text-primary-light hover:underline underline-offset-4"
+                    className="flex items-center gap-1 text-sm font-semibold text-primary hover:underline underline-offset-4"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

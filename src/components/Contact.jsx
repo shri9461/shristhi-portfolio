@@ -52,7 +52,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Get In Touch</h2>
-          <div className="w-20 h-1 bg-primary-light mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -74,8 +74,8 @@ const Contact = () => {
                 { icon: MapPin, label: 'Location', value: 'India' },
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-4">
-                  <div className="p-3 bg-primary-light/10 md:bg-transparent rounded-xl flex items-center justify-center">
-                    <item.icon className="text-primary-light" size={24} />
+                  <div className="p-3 bg-primary/10 md:bg-transparent rounded-xl flex items-center justify-center">
+                    <Mail className="text-primary" size={24} />
                   </div>
                   <div>
                     <p className="text-xs opacity-50 uppercase tracking-widest">{item.label}</p>
@@ -100,7 +100,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -2 }}
-                    className="p-3 glass rounded-xl hover:text-primary-light transition-colors"
+                    className="p-3 glass rounded-xl hover:text-primary transition-colors"
                   >
                     <Icon size={20} />
                   </motion.a>
@@ -127,7 +127,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-light transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -139,7 +139,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary-light transition-colors"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:border-primary transition-colors"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -181,7 +181,7 @@ const Contact = () => {
                 disabled={isLoading}
                 whileHover={{ scale: isLoading ? 1 : 1.02 }}
                 whileTap={{ scale: isLoading ? 1 : 0.98 }}
-                className="w-full bg-primary-light py-4 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary-light/20 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity"
+                className="w-full py-4 bg-primary text-background-light dark:text-background-dark rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-primary/20 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity"
               >
                 {isLoading ? (
                   <span className="flex items-center gap-2">

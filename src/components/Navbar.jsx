@@ -36,7 +36,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             animate={{ opacity: 1, x: 0 }}
             className="flex-shrink-0"
           >
-            <a href="#home" className="text-2xl font-bold text-white">
+            <a href="#home" className="text-2xl font-bold text-primary">
               Shristhi.
             </a>
           </motion.div>
@@ -48,7 +48,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
                 key={link.name}
                 href={link.href}
                 whileHover={{ scale: 1.05 }}
-                className="text-sm font-medium hover:text-primary-light transition-colors"
+                className="text-sm font-medium hover:text-primary transition-colors"
                 onClick={(e) => {
                   e.preventDefault();
                   document.querySelector(link.href)?.scrollIntoView({ behavior: 'smooth' });

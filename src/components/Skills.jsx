@@ -20,7 +20,7 @@ const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Professional Skills</h2>
-          <div className="w-20 h-1 bg-primary-light mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -31,7 +31,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass p-8 rounded-3xl border border-white/10 hover:border-primary-light/50 transition-all duration-300"
+              className="glass p-8 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300"
             >
               <div className="mb-6 inline-flex p-3 bg-white/5 rounded-2xl border border-white/10">
                 {skill.icon}
@@ -47,7 +47,7 @@ const Skills = () => {
               <div className="mt-8">
                 <div className="flex justify-between mb-2 text-sm font-medium">
                   <span className="opacity-60">Mastery</span>
-                  <span className="text-primary-light">{skill.level}</span>
+                  <span className="text-primary">{skill.level}</span>
                 </div>
                 <div className="h-2 bg-white/5 rounded-full overflow-hidden">
                   <motion.div
@@ -55,7 +55,7 @@ const Skills = () => {
                     whileInView={{ width: skill.level }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="h-full bg-gradient-to-r from-primary-light to-secondary-light"
+                    className="h-full bg-gradient-to-r from-primary to-secondary"
                   />
                 </div>
               </div>

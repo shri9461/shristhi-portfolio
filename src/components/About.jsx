@@ -18,7 +18,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">About Me</h2>
-          <div className="w-20 h-1 bg-primary-light mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary border-none mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -38,7 +38,7 @@ const About = () => {
             <div className="grid grid-cols-3 gap-4">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center p-4 glass rounded-2xl">
-                  <stat.icon className="mx-auto mb-2 text-primary-light" size={24} />
+                  <stat.icon className="mx-auto mb-2 text-primary" size={24} />
                   <h3 className="text-2xl font-bold">{stat.value}</h3>
                   <p className="text-xs opacity-60 uppercase tracking-wider">{stat.label}</p>
                 </div>
@@ -54,14 +54,14 @@ const About = () => {
             className="relative"
           >
             <div className="aspect-video glass rounded-3xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-light/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
               <div className="flex items-center justify-center h-full">
-                <Code size={80} className="text-primary-light opacity-20" />
+                <Code size={80} className="text-primary opacity-20" />
               </div>
             </div>
             {/* Abstract Shapes */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-secondary-light/20 rounded-full blur-xl animate-bounce" />
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary-light/20 rounded-full blur-xl animate-pulse" />
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-secondary/20 rounded-full blur-xl animate-bounce" />
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-pulse" />
           </motion.div>
         </div>
       </div>

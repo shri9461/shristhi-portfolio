@@ -21,7 +21,7 @@ const Internship = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">Internship</h2>
-          <div className="w-20 h-1 bg-primary-light mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-10 items-center">
@@ -31,22 +31,22 @@ const Internship = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="glass rounded-3xl border border-white/10 hover:border-primary-light/50 transition-all duration-300 p-8 group"
+            className="glass p-8 rounded-3xl border border-white/10 hover:border-primary/50 transition-all duration-300 group"
           >
             {/* Company badge */}
             <div className="flex items-center gap-4 mb-6">
-              <div className="inline-flex p-3 bg-white/5 rounded-2xl border border-white/10 group-hover:border-primary-light/40 transition-colors">
-                <Briefcase className="text-primary-light" size={28} />
+              <div className="inline-flex p-3 bg-white/5 rounded-2xl border border-white/10 group-hover:border-primary/40 transition-colors">
+                <Briefcase className="text-primary" size={28} />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-widest text-primary-light mb-1">
+                <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-1">
                   The Times Group
                 </p>
                 <p className="text-xs text-white/40">Bennett, Coleman &amp; Co. Ltd.</p>
               </div>
             </div>
 
-            <h3 className="text-2xl font-bold mb-1 group-hover:text-primary-light transition-colors">
+            <h3 className="text-xl font-bold mb-1 group-hover:text-primary transition-colors">
               Star Management Trainee
             </h3>
             <p className="text-white/60 font-medium mb-4">
@@ -71,7 +71,7 @@ const Internship = () => {
                 >
                   <ChevronRight
                     size={16}
-                    className="text-primary-light mt-0.5 flex-shrink-0"
+                    className="text-primary mt-0.5 flex-shrink-0"
                   />
                   {item}
                 </motion.li>
@@ -88,8 +88,8 @@ const Internship = () => {
             className="flex flex-col gap-6"
           >
             {/* Letter of Recommendation callout */}
-            <div className="glass rounded-3xl border border-primary-light/30 p-6 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-primary-light/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+            <div className="glass rounded-3xl border border-primary/30 p-6 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
               <div className="flex items-center gap-3 mb-3">
                 <Star className="text-yellow-400" size={20} fill="currentColor" />
                 <span className="text-sm font-semibold text-yellow-400">
@@ -100,7 +100,7 @@ const Internship = () => {
                 Honored to receive a Letter of Recommendation from{' '}
                 <span className="text-white font-semibold">The Times Group</span>{' '}
                 – Bennett, Coleman &amp; Co. Ltd., recognizing my work as a{' '}
-                <span className="text-primary-light font-semibold">
+                <span className="text-primary font-semibold">
                   Star Management Trainee
                 </span>{' '}
                 under the Strategy and Innovation vertical of Teach India
