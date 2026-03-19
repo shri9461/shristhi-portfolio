@@ -15,15 +15,15 @@ const Education = () => {
       location: 'Bandikui, Rajasthan',
       degree: 'Intermediate',
       duration: 'Apr ‘21 – Mar’22',
-      details: 'Percentage: 76%',
+      details: 'Percentage: 80%',
       icon: <School size={24} className="text-secondary-light" />,
     },
     {
-      institution: 'St. Francis School Railway School',
+      institution: 'Railway School',
       location: 'Bandikui, Rajasthan',
       degree: 'Matriculation',
       duration: 'Apr’19 – Mar ’20',
-      details: 'Percentage: 75%',
+      details: 'Percentage: 82%',
       icon: <School size={24} className="text-accent" />,
     },
   ]
