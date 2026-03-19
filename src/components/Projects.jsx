@@ -40,7 +40,7 @@ const Projects = () => {
   ]
 
   return (
-    <section id="projects" className="py-24 bg-white/5">
+    <section id="projects" className="py-24 bg-foreground/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
