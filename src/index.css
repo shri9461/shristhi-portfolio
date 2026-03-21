@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 @theme {
+  --font-display: "Outfit", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
   --color-foreground: var(--foreground-color);
@@ -10,21 +12,25 @@
 }
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: #71717a;
-  --foreground-color: #000000;
+  --primary-color: #818081;
+  --primary-rgb: 129, 128, 129;
+  --secondary-color: #818081;
+  --secondary-rgb: 129, 128, 129;
+  --foreground-color: #0f172a;
   --background-color: #ffffff;
-  --surface-color: rgba(0, 0, 0, 0.05);
-  --border-color: rgba(0, 0, 0, 0.1);
+  --surface-color: rgba(129, 128, 129, 0.05);
+  --border-color: rgba(15, 23, 42, 0.1);
 }
 
 .dark {
-  --primary-color: #ffffff;
-  --secondary-color: #a1a1aa;
-  --foreground-color: #ffffff;
-  --background-color: #000000;
-  --surface-color: rgba(255, 255, 255, 0.05);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --primary-color: #818081;
+  --primary-rgb: 129, 128, 129;
+  --secondary-color: #818081;
+  --secondary-rgb: 129, 128, 129;
+  --foreground-color: #f8fafc;
+  --background-color: #0c0c0c;
+  --surface-color: rgba(129, 128, 129, 0.05);
+  --border-color: rgba(255, 255, 255, 0.08);
 }
 
 html {
@@ -33,7 +39,7 @@ html {
 
 body {
   @apply bg-background text-foreground transition-colors duration-300 antialiased;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
   background-image: radial-gradient(circle at 50% 50%, var(--surface-color) 0%, transparent 100%);
   background-attachment: fixed;
 }
@@ -41,11 +47,12 @@ body {
 .dark body {
   @apply bg-background text-foreground;
   background-image:
-    radial-gradient(at 0% 0%, rgba(255, 255, 255, 0.05) 0, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(255, 255, 255, 0.02) 0, transparent 50%),
-    radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.02) 0, transparent 50%),
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    linear-gradient(to bottom, rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)),
+    url("./assets/bg_geometric.png");
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+  background-blend-mode: overlay;
 }
 
 @layer base {
@@ -57,6 +64,7 @@ body {
   h5,
   h6 {
     @apply font-bold tracking-tight;
+    font-family: 'Outfit', sans-serif;
   }
 }
 

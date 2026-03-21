@@ -65,7 +65,7 @@ const Contact = () => {
           >
             <h3 className="text-2xl font-bold mb-6">Let's talk about everything!</h3>
             <p className="opacity-70 mb-8 max-w-md">
-              Don't like forms? Send me an email. 👋
+              Don't like forms? Send me an email.
             </p>
 
             <div className="space-y-6">
@@ -181,7 +181,7 @@ const Contact = () => {
                 disabled={isLoading}
                 whileHover={{ scale: isLoading ? 1 : 1.02 }}
                 whileTap={{ scale: isLoading ? 1 : 0.98 }}
-                className="w-full py-4 bg-primary text-background-light dark:text-background-dark rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-primary/20 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity"
+                className="w-full py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg shadow-primary/20 disabled:opacity-60 disabled:cursor-not-allowed transition-opacity"
               >
                 {isLoading ? (
                   <span className="flex items-center gap-2">

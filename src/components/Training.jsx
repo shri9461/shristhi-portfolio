@@ -12,7 +12,8 @@ const Training = () => {
         "Core Data Structures (Arrays, Linked Lists, Trees, Graphs)",
         "Algorithm Optimization & Complexity",
         "Problem Solving using C++"
-      ]
+      ],
+      link: "https://media.licdn.com/dms/image/v2/D5622AQGV-m4TNq9aaw/feedshare-shrink_2048_1536/B56ZrLuFLHJ8Aw-/0/1764354448291?e=1775692800&v=beta&t=4a1Y_OAqBrlmVFWKp7l2RYfB9P83USvwAyrZQhudy7I"
     }
   ]
 
@@ -68,7 +69,7 @@ const Training = () => {
                     {item.description}
                   </p>
 
-                  <div className="grid sm:grid-cols-2 gap-4">
+                  <div className="grid sm:grid-cols-2 gap-4 mb-8">
                     {item.highlights.map((highlight, i) => (
                       <div key={i} className="flex items-center gap-3 text-sm text-foreground/50 bg-foreground/5 p-3 rounded-xl border border-foreground/5">
                         <BookOpen size={16} className="text-secondary" />
@@ -76,6 +77,20 @@ const Training = () => {
                       </div>
                     ))}
                   </div>
+
+                  {item.link && (
+                    <div className="pt-6 border-t border-foreground/5">
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-bold transition-colors group/link"
+                      >
+                        <span>Verify Certificate</span>
+                        <ExternalLink size={18} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>

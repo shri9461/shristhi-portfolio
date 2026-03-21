@@ -48,7 +48,7 @@ const Resume = () => {
               disabled={isDownloading}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.4)] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+              className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full hover:shadow-[0_0_20px_rgba(var(--primary-rgb),0.4)] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
             >
               <Download size={20} />
               {isDownloading ? 'Generating PDF...' : 'Download PDF'}
@@ -143,7 +143,7 @@ const Resume = () => {
                             <button
                                 onClick={downloadResume}
                                 disabled={isDownloading}
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-xl hover:shadow-[0_0_15px_rgba(var(--primary-rgb),0.4)] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
+                                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:shadow-[0_0_15px_rgba(var(--primary-rgb),0.4)] transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                             >
                                 <Download size={20} />
                                 {isDownloading ? 'Generating...' : 'Download PDF'}
