@@ -7,23 +7,26 @@ const Projects = () => {
   const projects = [
     {
       title: 'Student Marks Analyzer',
-      description: 'Built a simple program that Analyzer student marks using functions, arrays, pointers, sorting, and basic DSA concepts to generate meaningful results.',
+      description: [
+        'Built a program to analyze student marks using functions, arrays, pointers, sorting, and basic DSA concepts.',
+        'Implemented DSA concepts to improve accuracy and performance in marks analysis.',
+        'Calculated key statistics — highest, lowest, and average marks — for a clear performance summary.',
+        'Tech: C++, arrays, functions, pointers, sorting algorithms, and basic data structures.',
+      ],
       tech: ['C++', 'DSA', 'Algorithms'],
       image: marksAnalyzerImg,
       github: 'https://github.com/shri9461/studentMarksanalayzer',
       demo: 'https://www.linkedin.com/posts/shristhi-sethi-043772289_cplusplus-dsa-coding-activity-7348651171277914115-_nfc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYO6LMBrgQDuQvb2f24Rx81y5rcdTGFKg0'
     },
-    {
-      title: 'Caption Website',
-      description: 'Develop a real-time closed captioning solution with simplified captions in multiple Indian languages for accessibility and inclusivity.',
-      tech: ['ReactJS', 'Node.js', 'MongoDB'],
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&q=80', // Tech/accessibility image
-      github: 'https://github.com/shri9461/Captioning',
-      demo: 'https://www.linkedin.com/posts/shristhi-sethi-043772289_reactjs-nodejs-tailwindcss-activity-7411663072932573184-lABo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYO6LMBrgQDuQvb2f24Rx81y5rcdTGFKg0'
-    },
+
     {
       title: 'Online Furniture Store',
-      description: 'To design and develop a functional online furniture shopping platform where users can browse products, view details, and manage their cart.',
+      description: [
+        'Built an Online Furniture Store with product catalog, cart system, and responsive design.',
+        'Implemented product detail pages for an enhanced browsing experience.',
+        'Developed a session-based shopping cart allowing users to add, remove, and manage items.',
+        'Designed a fully responsive interface using HTML, CSS, Tailwind CSS, and PHP.',
+      ],
       tech: ['HTML', 'CSS', 'Tailwind CSS', 'PHP'],
       image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80', // Furniture/Ecommerce image
       github: '',
@@ -31,7 +34,12 @@ const Projects = () => {
     },
     {
       title: 'NetMon - Network Dashboard',
-      description: 'I designed and developed a full-stack web application that helps monitor network activity, track device status, and visualize performance metrics in real time.',
+      description: [
+        'Designed and developed a full-stack network monitoring dashboard to track device status, network activity, and performance metrics in real time.',
+        'Built an interactive UI to visualize network data through charts, graphs, and status indicators.',
+        'Implemented real-time monitoring features to detect network issues quickly and improve response time.',
+        'Developed backend logic to collect, process, and display network performance data efficiently.',
+      ],
       tech: ['ReactJS', 'Node.js', 'Python'],
       image: netMonImg,
       github: 'https://github.com/shri9461/NetMon',
@@ -80,9 +88,20 @@ const Projects = () => {
               </div>
               <div className="p-8">
                 <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                <p className="opacity-70 text-sm mb-6 leading-relaxed">
-                  {project.description}
-                </p>
+                {Array.isArray(project.description) ? (
+                  <ul className="opacity-70 text-sm mb-6 leading-relaxed list-none space-y-1">
+                    {project.description.map((point, i) => (
+                      <li key={i} className="flex gap-2">
+                        <span className="text-primary mt-0.5">•</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="opacity-70 text-sm mb-6 leading-relaxed">
+                    {project.description}
+                  </p>
+                )}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((t, i) => (
                     <span key={i} className="text-xs text-primary font-medium uppercase tracking-wider">

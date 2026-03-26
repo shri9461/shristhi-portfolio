@@ -62,7 +62,7 @@ const Education = () => {
                       {edu.institution}
                     </h3>
                     <p className="text-primary font-medium mb-2">{edu.degree}</p>
-                    <div className="flex flex-wrap gap-4 text-sm text-foreground/40">
+                    <div className="flex flex-wrap gap-4 text-sm text-foreground/70">
                       <div className="flex items-center gap-1">
                         <MapPin size={14} />
                         <span>{edu.location}</span>
