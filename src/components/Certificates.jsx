@@ -69,7 +69,7 @@ const Certificates = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Certifications</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">Certificate</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
 

@@ -4,7 +4,7 @@ import { User, Code, GraduationCap } from 'lucide-react'
 const About = () => {
   const stats = [
     { label: 'Projects Completed', value: '5+', icon: Code },
-    { label: 'Certifications', value: '5+', icon: GraduationCap },
+    { label: 'Certificate', value: '5+', icon: GraduationCap },
   ]
 
   return (
