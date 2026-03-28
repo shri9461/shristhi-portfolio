@@ -15,7 +15,7 @@ const Education = () => {
       location: 'Bandikui, Rajasthan',
       degree: 'Intermediate',
       duration: 'Apr ‘21 – Mar’22',
-      details: 'Percentage: 80%',
+      details: 'Percentage: 76%',
       icon: <School size={24} className="text-secondary" />,
     },
     {
@@ -23,7 +23,7 @@ const Education = () => {
       location: 'Bandikui, Rajasthan',
       degree: 'Matriculation',
       duration: 'Apr’19 – Mar ’20',
-      details: 'Percentage: 82%',
+      details: 'Percentage: 75%',
       icon: <School size={24} className="text-accent" />,
     },
   ]
